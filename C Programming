@@ -74,6 +74,7 @@ int main() {
 }    
 
 
+6) Write a C program that takes two numbers input and calculates the quotient and remainder using division modulus operators
 #include <stdio.h>
 
 int main() {
