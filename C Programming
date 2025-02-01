@@ -43,6 +43,7 @@ int main()
 } 
  
 4) Write a c program that takes the birth years of 2 people as input and calculates the age difference between them using arithemetic operators. 
+
 #include <stdio.h> 
 int main() { 
     int a,b,agedifference; 
@@ -59,7 +60,8 @@ int main() {
 } 
  
 
-5) Write a C program that takes the length and breadth of a rectangle as input and calculate its area and perimeter using arithmetic operators.  
+5) Write a C program that takes the length and breadth of a rectangle as input and calculate its area and perimeter using arithmetic operators. 
+
 #include <stdio.h> 
 int main() { 
     int a,b,area,perimeter; 
@@ -75,6 +77,7 @@ int main() {
 
 
 6) Write a C program that takes two numbers input and calculates the quotient and remainder using division modulus operators
+
 #include <stdio.h>
 
 int main() {
@@ -91,5 +94,33 @@ int main() {
    printf("Quotient of two numbers is %f and remainder is %d",quotient,remainder);
 
     return 0;
+}
+
+7) Imagine you're at a provision store, and you need to buy different products like rice, sugar, and oil. Each product has a price and quantity,
+and the store applies a 5% tax on the total purchase.
+
+#include <stdio.h>
+int main()
+{
+    int rice_cost,sugar_cost,oil_cost,rice_qty,sugar_qty,oil_qty;
+    float Tax = 0.05;
+    printf("Enter the rice cost = ");
+    scanf("%d",&rice_cost);
+    printf("Enter the sugar cost = ");
+    scanf("%d",&sugar_cost);
+    printf("Enter the oil cost = ");
+    scanf("%d",&oil_cost);
+    printf("Quantity of rice in kgs = ");
+    scanf("%d",&rice_qty);
+    printf("Quantity of sugar in kgs = ");
+    scanf("%d",&sugar_qty);
+    printf("Quantity of oil in ltrs = ");
+    scanf("%d",&oil_qty);
+    int sub_total = (rice_cost*rice_qty)+(sugar_cost*sugar_qty)+(oil_cost*oil_qty);
+    float total_tax = sub_total*Tax;
+    float total_cost = sub_total + total_tax;
+    printf("Total cost of all items with 5% Tax is %.3frupees",total_cost);
+    return 0;
+    
 }
 
