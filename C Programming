@@ -124,3 +124,69 @@ int main()
     return 0;
     
 }
+
+8) Write a C program that takes the principal amount rate of interest, and time in years as input and calculates the simple interest using arithmetic operatiors.*/
+
+#include <stdio.h>
+int main() {
+    float principal, rate, time, simpleInterest;
+    printf("Enter the principal amount: ");
+    scanf("%f", &principal);
+    printf("Enter the rate of interest: ");
+    scanf("%f", &rate);
+    printf("Enter the time in years: ");
+    scanf("%f", &time);
+    simpleInterest = (principal * rate * time) / 100;
+    printf("Simple Interest: %.2f\n", simpleInterest);
+    return 0;
+}
+
+9) You are at an electronics store purchasing different gadgets like a laptop, headphones, and a phone charger. Each item has a price and quantity, and there is a 10% tax added to the total amount at checkout.*/
+
+#include <stdio.h>
+int main() {
+    float laptop_price,headphone_price,phonecharger_price,laptop_qty,headphones_qty,phonecharger_qty,sub_total,total_cost;
+    float tax = 0.1,total_tax;
+    printf("Cost of one laptop =");
+    scanf("%f",&laptop_price);
+    printf("Cost of one headphone =");
+    scanf("%f",&headphone_price);
+    printf("Cost of one phone charger =");
+    scanf("%f",&phonecharger_price);
+    printf("Number of laptops you want to buy =");
+    scanf("%f",&laptop_qty);
+    printf("Number of headphones you want to buy =");
+    scanf("%f",&headphones_qty);
+    printf("Number of phonechargers you want to buy =");
+    scanf("%f",&phonecharger_qty);
+    laptop_price = laptop_price*laptop_qty;
+    printf("Total laptops cost is %.2frupees\n",laptop_price);
+    headphone_price = headphone_price*headphones_qty;
+    printf("Total headphones cost is %.2frupees\n",headphone_price);
+    phonecharger_price = phonecharger_price*phonecharger_qty;
+    printf("Total phonechargers cost is %.2frupees\n",phonecharger_price);
+    sub_total = laptop_price+headphone_price+phonecharger_price;
+    printf("Total amount of all items is %.2frupees\n",sub_total);
+    total_tax = sub_total*tax;
+    printf("Tax applied on all items is %.2frupees\n",total_tax);
+    total_cost = sub_total+total_tax;
+    printf("Total amount of all items including tax is %.2frupees\n",total_cost);
+    return 0;
+}
+
+10) 1. A bank offers foreign exchange services where customers can convert USD to INR. Assume 1 USD = ₹83.
+Write a program that:
+Takes the amount in USD as input.
+Converts it to INR using multiplication.
+Prints the equivalent INR amount.
+
+#include<stdio.h>
+int main()
+{
+    int USD,INR;
+    printf("Amount of USD:");
+    scanf("%d",&USD);
+    INR=USD*83;
+    printf("Amount in INR is %drupees",INR);
+    return 0;
+}
